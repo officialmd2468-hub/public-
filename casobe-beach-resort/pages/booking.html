@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookings | Casobe Beach Resort</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <nav>
+
+            <h1>Casobe Beach Resort</h1>
+
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= BOOKING HERO ================= -->
+
+    <section class="booking-hero">
+
+        <div class="booking-hero-content">
+
+            <span>CASOBE BEACH RESORT</span>
+
+            <h2>Make Your Reservation</h2>
+
+            <p>
+                Plan your stay or enjoy a relaxing day tour at Casobe.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING SECTION ================= -->
+
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <div class="booking-intro">
+
+                <span>RESERVATION</span>
+
+                <h2>Book Your Experience</h2>
+
+                <p>
+                    Choose between an overnight stay or a day tour,
+                    then provide your booking details.
+                </p>
+
+            </div>
+
+
+            <!-- ================= BOOKING FORM ================= -->
+
+            <form id="bookingForm">
+
+
+                <!-- BOOKING TYPE -->
+
+                <div class="form-group">
+
+                    <label for="bookingType">
+                        Booking Type
+                    </label>
+
+                    <select id="bookingType" name="bookingType" required>
+
+                        <option value="">
+                            Select Booking Type
+                        </option>
+
+                        <option value="overnight">
+                            Overnight Stay
+                        </option>
+
+                        <option value="day-tour">
+                            Day Tour
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= CUSTOMER DETAILS ================= -->
+
+                <h3 class="form-section-title">
+                    Guest Information
+                </h3>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="referenceCode">
+                        Reference Code <span>(Optional)</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="referenceCode"
+                        name="referenceCode"
+                        placeholder="Enter reference code if you already have one">
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- OVERNIGHT STAY DETAILS -->
+                <!-- ================================================= -->
+
+                <div id="overnightFields" class="booking-type-fields">
+
+                    <h3 class="form-section-title">
+                        Overnight Stay
+                    </h3>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="checkin">
+                                Check-in Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="checkin"
+                                name="checkin">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="checkout">
+                                Check-out Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="checkout"
+                                name="checkout">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="room">
+                                Accommodation
+                            </label>
+
+                            <select id="room" name="room">
+
+                                <option value="">
+                                    Select accommodation
+                                </option>
+
+                                <option value="Chairman's Cabin">
+                                    Chairman's Cabin
+                                </option>
+
+                                <option value="Cupola">
+                                    Cupola
+                                </option>
+
+                                <option value="Apollo Aeropods">
+                                    Apollo Aeropods
+                                </option>
+
+                                <option value="Cocoons">
+                                    Cocoons
+                                </option>
+
+                                <option value="Beach Suite">
+                                    Beach Suite
+                                </option>
+
+                                <option value="VIP Beach Suite">
+                                    VIP Beach Suite
+                                </option>
+
+                                <option value="Private Villa">
+                                    Private Villa
+                                </option>
+
+                                <option value="Villa for 15 Pax">
+                                    Villa for 15 Pax
+                                </option>
+
+                                <option value="Villa for 22 Pax">
+                                    Villa for 22 Pax
+                                </option>
+
+                                <option value="Villa for 30 Pax">
+                                    Villa for 30 Pax
+                                </option>
+
+                                <option value="Villa for 38 Pax">
+                                    Villa for 38 Pax
+                                </option>
+
+                                <option value="Crusoe Cabins">
+                                    Crusoe Cabins
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="nights">
+                                Number of Nights
+                            </label>
+
+                            <input
+                                type="number"
+                                id="nights"
+                                name="nights"
+                                min="1"
+                                readonly
+                                placeholder="Calculated automatically">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PAYING GUESTS -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="payingGuests">
+                                Guests 7 Years & Above
+                            </label>
+
+                            <input
+                                type="number"
+                                id="payingGuests"
+                                name="payingGuests"
+                                min="0"
+                                value="0">
+
+                            <small>
+                                Guests aged 7 years and above are charged
+                                the accommodation guest fee per night.
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="childrenUnder7">
+                                Children Below 7
+                            </label>
+
+                            <input
+                                type="number"
+                                id="childrenUnder7"
+                                name="childrenUnder7"
+                                min="0"
+                                value="0">
+
+                            <small>
+                                Children below 7 years are free of the
+                                accommodation guest fee.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================================================= -->
+                <!-- DAY TOUR DETAILS -->
+                <!-- ================================================= -->
+
+                <div id="dayTourFields" class="booking-type-fields">
+
+                    <h3 class="form-section-title">
+                        Day Tour
+                    </h3>
+
+
+                    <div class="form-group">
+
+                        <label for="tourDate">
+                            Day Tour Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="tourDate"
+                            name="tourDate">
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="tourAdults">
+                                Adults
+                            </label>
+
+                            <input
+                                type="number"
+                                id="tourAdults"
+                                name="tourAdults"
+                                min="0"
+                                value="0">
+
+                            <small>
+                                Adult entrance fee applies.
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="tourChildren">
+                                Children ≤ 4 ft
+                            </label>
+
+                            <input
+                                type="number"
+                                id="tourChildren"
+                                name="tourChildren"
+                                min="0"
+                                value="0">
+
+                            <small>
+                                Child entrance fee applies.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="tourInfants">
+                            Infants ≤ 1 Year
+                        </label>
+
+                        <input
+                            type="number"
+                            id="tourInfants"
+                            name="tourInfants"
+                            min="0"
+                            value="0">
+
+                        <small>
+                            Infants 1 year and below are free.
+                        </small>
+
+                    </div>
+
+
+                    <div class="day-tour-note">
+
+                        <strong>Day Tour Rates</strong>
+
+                        <p>
+                            Your entrance fee will be calculated
+                            automatically according to the applicable
+                            season and whether your selected date is a
+                            weekday or weekend.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= MESSAGE ================= -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Additional Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Any special requests or additional information?"></textarea>
+
+                </div>
+
+
+                <!-- ================= BOOKING SUMMARY ================= -->
+
+                <div class="booking-summary">
+
+                    <h3>Booking Summary</h3>
+
+
+                    <div class="summary-row">
+
+                        <span>Booking Type</span>
+
+                        <strong id="summaryBookingType">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Accommodation</span>
+
+                        <strong id="summaryRoom">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Date</span>
+
+                        <strong id="summaryDate">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Check-out</span>
+
+                        <strong id="summaryCheckout">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Nights</span>
+
+                        <strong id="summaryNights">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Paying Guests</span>
+
+                        <strong id="summaryPayingGuests">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Children Below 7</span>
+
+                        <strong id="summaryChildren">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Expected Amount</span>
+
+                        <strong id="expectedAmount">
+                            ₱0.00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SUBMIT ================= -->
+
+                <button
+                    type="submit"
+                    class="submit-booking-btn">
+
+                    Submit Reservation
+
+                </button>
+
+
+                <p class="booking-note">
+                    Your reservation is subject to availability and
+                    administrative confirmation.
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Casobe Beach Resort</h3>
+
+        <p>
+            Relax. Explore. Create unforgettable memories.
+        </p>
+
+        <p>
+            &copy; 2026 Casobe Beach Resort.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
